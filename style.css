@@ -1,0 +1,158 @@
+body {
+    font-family: Arial,sans-serif;
+    background-color:rgb(87, 144, 163);
+    color:#333;
+    padding:10px;
+    margin: 0;
+    transition: background-colo o.3s ease, color o.3s ease;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    transition: background-colo o.3s ease, color o.3s ease;
+}
+nav a {
+    color: white;
+    margin-right:0 10px;
+    text-decoration:none;
+    display: inline-block;
+    transition: background-colo o.3s ease, color o.3s ease;
+}
+header {
+    background-color: #e3f2fd;
+    max-width: 900px;
+    margin:0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+section {
+    margin-bottom: 30px;
+}
+h1 {
+    color: #0066cc;
+}
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.project-card {
+    background-color:beige;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
+}
+.contact h2 {
+    color: #0066cc;
+    margin-top: 20px;
+}
+.contact ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.contact li {
+    margin-bottom: 10px;
+}
+.contact a {
+    color: #333;
+    text-decoration: none;
+}
+.contact a:hover {
+    text-decoration: overline;
+}
+.intro {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #e3f2fd;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.profile-pic {
+    width:120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+.intro-text {
+    flex: 1;
+}
+.learning ul {
+    padding-left: 20px;
+}
+/*Dark Mode Style */
+body.dark {
+    background-color: #121212;
+    color:#f0f0f0;
+    transition: background-colo o.3s ease, color o.3s ease;
+}
+body.dark nav {
+    background-color: #1e1e1e;
+    transition: background-colo o.3s ease, color o.3s ease;
+}
+body.dark footer {
+    background-color: #1e1e1e;
+    transition: background-colo o.3s ease, color o.3s ease;
+}
+body.dark .project-card,
+body.dark .welcome,
+body.dark .intro {
+    background-color: #2a2a2a;
+    color:#f0f0f0;
+    transition: background-colo o.3s ease, color o.3s ease;
+} 
+/*Style the dark mode button */
+.dark-btn {
+    margin: 10px;
+    padding: 8px 16px;
+    background-color: #333;
+    color:white;
+    border:none;
+    border-radius: 6px;
+    cursor:pointer;
+}
+ 
+.about-me {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+.about-me h2 {
+    color:#0066cc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+    nav a {
+        display:block;
+        margin:10px 0;
+    }
+}
